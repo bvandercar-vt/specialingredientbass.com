@@ -1,0 +1,68 @@
+{
+  "name": "specialingredient.github.io",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Special Ingredient Bass Music",
+  "homepage": "specialingredientbass.com",
+  "scripts": {
+    "start": "yarn dev",
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "yarn build && vite preview --open",
+    "lint": "yarn format && yarn ts:check && yarn eslint && yarn format:check",
+    "ts:check": "tsc",
+    "eslint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "sandbox": "npx tsx ./sandbox.ts",
+    "generate-playlist-json": "vite --open --config ./spotify-tools/vite.config.ts ./spotify-tools"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bvandercar-vt/specialingredient.github.io.git"
+  },
+  "keywords": [
+    "bass",
+    "music"
+  ],
+  "author": "Blake Vandercar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bvandercar-vt/specialingredient.github.io/issues"
+  },
+  "devDependencies": {
+    "@spotify/web-api-ts-sdk": "^1.2",
+    "@types/lodash": "^4",
+    "@types/node": "^22",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4",
+    "dotenv": "^16",
+    "eslint": "^9",
+    "eslint-config-prettier": "^9",
+    "eslint-plugin-prettier": "^5",
+    "eslint-plugin-react": "^7",
+    "prettier": "^3",
+    "type-fest": "^4",
+    "typescript": "^5",
+    "typescript-eslint": "^8",
+    "vite": "^5",
+    "vite-plugin-fs": "^1"
+  },
+  "dependencies": {
+    "@fontsource/barlow": "^5",
+    "@fontsource/outfit": "^5",
+    "@fontsource/roboto-condensed": "^5",
+    "@fortawesome/fontawesome-free": "^6.7",
+    "@fortawesome/fontawesome-svg-core": "^6.7",
+    "@fortawesome/free-brands-svg-icons": "^6.7",
+    "@fortawesome/free-solid-svg-icons": "^6.7",
+    "@fortawesome/react-fontawesome": "^0.2",
+    "classnames": "^2",
+    "lodash": "^4",
+    "merge-refs": "^1",
+    "react": "^18",
+    "react-dom": "^18"
+  }
+}
